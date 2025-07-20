@@ -1,8 +1,10 @@
 import lume from "lume/mod.ts";
 import jsx from "lume/plugins/jsx.ts";
 import date from "lume/plugins/date.ts";
+import sitemap from "lume/plugins/sitemap.ts";
 
 const site = lume({
+  location: new URL("https://blog.fbik.top"),
   src: "src",
   server: {
     port: 4173,
@@ -11,6 +13,7 @@ const site = lume({
 
 site.use(jsx());
 site.use(date());
+site.use(sitemap());
 
 site.add("_readme.md", "index.html");
 
