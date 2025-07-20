@@ -6,6 +6,8 @@ import feed from "lume/plugins/feed.ts";
 import lightningCss from "lume/plugins/lightningcss.ts";
 import purgecss from "lume/plugins/purgecss.ts";
 import minifyHTML from "lume/plugins/minify_html.ts";
+import brotli from "lume/plugins/brotli.ts";
+import gzip from "lume/plugins/gzip.ts";
 
 const site = lume({
   location: new URL("https://blog.fbik.top"),
@@ -24,6 +26,8 @@ site.use(feed({
 site.use(lightningCss());
 site.use(purgecss());
 site.use(minifyHTML());
+site.use(brotli());
+site.use(gzip());
 
 site.add("_readme.md", "index.html");
 
