@@ -3,9 +3,6 @@ import jsx from "lume/plugins/jsx.ts";
 import date from "lume/plugins/date.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import feed from "lume/plugins/feed.ts";
-import lightningCss from "lume/plugins/lightningcss.ts";
-import purgecss from "lume/plugins/purgecss.ts";
-import minifyHTML from "lume/plugins/minify_html.ts";
 
 const site = lume({
   location: new URL("https://blog.fbik.top"),
@@ -21,9 +18,13 @@ site.use(sitemap());
 site.use(feed({
   output: ["./rss.xml"],
 }));
-site.use(lightningCss());
-site.use(purgecss());
-site.use(minifyHTML());
+
+// use on production
+if (!Deno.args.includes("-s")) {
+  site.use((await import("lume/plugins/lightningcss.ts")).default());
+  site.use((await import("lume/plugins/purgecss.ts")).default());
+  site.use((await import("lume/plugins/minify_html.ts")).default());
+}
 
 site.add("_readme.md", "index.html");
 
