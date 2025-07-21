@@ -22,6 +22,7 @@
   "fmt": {
     "exclude": [
       "./src/public/syntax.css",
+      "./src/public/smol.css",
       "./src/public/smol-v2.css"
     ]
   }
