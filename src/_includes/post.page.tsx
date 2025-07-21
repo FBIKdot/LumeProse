@@ -6,8 +6,7 @@ export default (
     Lume.Data,
   helpers: Lume.Helpers,
 ) => (
-  <Base title={title || "title"}>
-    <link rel="stylesheet" href="/smol-v2.css" />
+  <Base title={title || "title"} isPost={true}>
     <header>
       <h1 class="text-2xl font-bold">{title}</h1>
       <p class="font-bold m-0">
@@ -44,10 +43,10 @@ export default (
         </div>
 
         {footer && footer !== "" && (
-          <>
+          <div id="post-footer">
             <hr />
-            <div id="post-footer">{footer}</div>
-          </>
+            {{ __html: helpers.md(footer) }}
+          </div>
         )}
       </article>
     </main>
