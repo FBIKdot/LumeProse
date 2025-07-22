@@ -2,6 +2,7 @@
 layout: blog.page.tsx
 title: "FBIK."
 type: page
+avatar: avatar.png
 ---
 
 # 👋 Hi! I am FBIK.

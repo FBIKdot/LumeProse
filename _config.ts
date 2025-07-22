@@ -30,6 +30,7 @@ if (!Deno.args.includes("-s")) {
 
 site.add("_readme.md", "index.html");
 
+site.add("public/avatar.png", "avatar.png");
 site.add("public/smol.css", "smol.css");
 site.add("public/smol-v2.css", "smol-v2.css");
 site.add("public/syntax.css", "syntax.css");
