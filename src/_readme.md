@@ -1,6 +1,7 @@
 ---
 layout: blog.page.tsx
 title: "FBIK.'s blog"
+type: page
 header:
   nav:
     site: https://fbik.top
