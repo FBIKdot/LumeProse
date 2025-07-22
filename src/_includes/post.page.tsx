@@ -1,9 +1,7 @@
 import Base from "./base.page.tsx";
-import Footer from "./footer.page.tsx";
 
 export default (
-  { content, title, search, date, tags, description, footer, update }:
-    Lume.Data,
+  { content, title, date, tags, description, footer, update }: Lume.Data,
   helpers: Lume.Helpers,
 ) => (
   <Base title={title || "title"} isPost={true}>
