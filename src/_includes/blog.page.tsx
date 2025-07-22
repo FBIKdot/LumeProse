@@ -2,7 +2,7 @@ import Base from "./base.page.tsx";
 import { header } from "./header.ts";
 
 export default (
-  { content, title, bio, search, url }: Lume.Data,
+  { content, title, search, url }: Lume.Data,
   helpers: Lume.Helpers,
 ) => (
   <Base title={title || "title"}>
