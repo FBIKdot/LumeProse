@@ -3,6 +3,7 @@ import jsx from "lume/plugins/jsx.ts";
 import date from "lume/plugins/date.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import feed from "lume/plugins/feed.ts";
+import slugifyUrls from "lume/plugins/slugify_urls.ts";
 
 const site = lume({
   location: new URL("https://blog.fbik.top"),
@@ -18,6 +19,7 @@ site.use(sitemap());
 site.use(feed({
   output: ["./rss.xml"],
 }));
+site.use(slugifyUrls());
 
 // use on production
 if (!Deno.args.includes("-s")) {
