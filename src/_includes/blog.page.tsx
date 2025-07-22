@@ -2,10 +2,10 @@ import Base from "./base.page.tsx";
 import { header } from "./header.ts";
 
 export default (
-  { content, title, search, showPostsList, bio, avatar }: Lume.Data,
+  { content, title, search, showPostsList, bio, icon }: Lume.Data,
   helpers: Lume.Helpers,
 ) => (
-  <Base title={title || "title"} avatar={avatar}>
+  <Base title={title || "title"} icon={icon}>
     <link rel="stylesheet" href="/syntax.css" />
     <header class="text-center">
       <h1 class="text-2xl font-bold mt-2">{title}</h1>

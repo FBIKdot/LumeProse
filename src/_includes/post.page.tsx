@@ -1,10 +1,10 @@
 import Base from "./base.page.tsx";
 
 export default (
-  { content, title, date, tags, description, footer, update }: Lume.Data,
+  { content, title, date, tags, description, footer, update, icon }: Lume.Data,
   helpers: Lume.Helpers,
 ) => (
-  <Base title={title || "title"} isPost={true}>
+  <Base title={title || "title"} isPost={true} icon={icon}>
     <header>
       <h1 class="text-2xl font-bold">{title}</h1>
       <p class="font-bold m-0">

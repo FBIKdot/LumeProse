@@ -1,10 +1,10 @@
 import Footer from "./footer.page.tsx";
 export default (
-  { title, children, isPost, avatar }: {
+  { title, children, isPost, icon: avatar }: {
     title: string;
     children: JSX.Children;
     isPost?: boolean;
-    avatar?: string;
+    icon?: string;
   },
 ) => (
   <>
