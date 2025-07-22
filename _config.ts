@@ -6,7 +6,7 @@ import feed from "lume/plugins/feed.ts";
 import slugifyUrls from "lume/plugins/slugify_urls.ts";
 
 const site = lume({
-  location: new URL("https://blog.fbik.top"),
+  location: new URL("https://fbik.top"),
   src: "src",
   server: {
     port: 4173,
