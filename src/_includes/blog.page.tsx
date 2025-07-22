@@ -19,7 +19,7 @@ export default (
             <span>{index !== 0 && " | "}</span>
             <a
               href={value as string}
-              target="_blank"
+              target={value.includes("http") ? "_blank" : "_self"}
               rel="noopener noreferrer"
               class="text-lg transform-none"
             >
