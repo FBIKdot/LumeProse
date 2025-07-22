@@ -2,14 +2,14 @@ import Base from "./base.page.tsx";
 import { header } from "./header.ts";
 
 export default (
-  { content, title, search, url }: Lume.Data,
+  { content, title, search, showPostsList, bio }: Lume.Data,
   helpers: Lume.Helpers,
 ) => (
   <Base title={title || "title"}>
     <link rel="stylesheet" href="/syntax.css" />
     <header class="text-center">
       <h1 class="text-2xl font-bold mt-2">{title}</h1>
-      {header.bio}
+      {bio}
       <nav>
         {[...Object.entries(header.nav), ["rss", "/rss.xml"]].map((
           [key, value],
@@ -37,10 +37,10 @@ export default (
           <article class="md">
             {{ __html: content }}
           </article>
-          {url === "/" && <hr />}
+          {showPostsList && <hr />}
         </section>
       )}
-      {url === "/" && (
+      {showPostsList && (
         <section class="posts group mt-2">
           {search.pages().map((page) =>
             page.type !== "page" &&
