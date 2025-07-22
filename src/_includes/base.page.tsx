@@ -1,9 +1,10 @@
 import Footer from "./footer.page.tsx";
 export default (
-  { title, children, isPost }: {
+  { title, children, isPost, avatar }: {
     title: string;
     children: JSX.Children;
     isPost?: boolean;
+    avatar?: string;
   },
 ) => (
   <>
@@ -16,7 +17,7 @@ export default (
         {isPost && <link rel="stylesheet" href="/syntax.css" />}
         <link
           rel="icon"
-          href="/favicon.ico"
+          href={avatar || "/favicon.ico"}
         >
         </link>
         <title>{title}</title>
