@@ -37,7 +37,7 @@ export default (
           <article class="md">
             {{ __html: content }}
           </article>
-          <hr />
+          {url === "/" && <hr />}
         </section>
       )}
       {url === "/" && (
