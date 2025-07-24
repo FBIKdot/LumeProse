@@ -6,6 +6,8 @@ import feed from "lume/plugins/feed.ts";
 import slugifyUrls from "lume/plugins/slugify_urls.ts";
 import codeHighlight from "lume/plugins/code_highlight.ts";
 
+import mila from "markdown-it-link-attributes";
+
 const site = lume({
   location: new URL("https://fbik.top"),
   src: "src",
@@ -32,6 +34,13 @@ site.use(codeHighlight({
     placeholder: "/* light */",
   }],
 }));
+
+site.hooks.addMarkdownItPlugin(mila, {
+  attrs: {
+    target: "_blank",
+    rel: "noopener noreferrer",
+  },
+});
 
 // use on production
 if (!Deno.args.includes("-s")) {
