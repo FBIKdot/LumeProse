@@ -17,7 +17,7 @@ site.use(jsx());
 site.use(date());
 site.use(sitemap());
 site.use(feed({
-  output: ["./rss.xml"],
+  output: ["./feed.xml"],
 }));
 site.use(slugifyUrls());
 

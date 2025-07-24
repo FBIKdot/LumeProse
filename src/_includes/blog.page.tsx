@@ -11,7 +11,7 @@ export default (
       <h1 class="text-2xl font-bold mt-2">{title}</h1>
       {bio}
       <nav>
-        {[...Object.entries(header.nav), ["rss", "/rss.xml"]].map((
+        {[...Object.entries(header.nav), ["rss", "/feed.xml"]].map((
           [key, value],
           index,
         ) => (
