@@ -6,7 +6,6 @@ export default (
   helpers: Lume.Helpers,
 ) => (
   <Base title={title || "title"} icon={icon}>
-    <link rel="stylesheet" href="/syntax.css" />
     <header class="text-center">
       <h1 class="text-2xl font-bold mt-2">{title}</h1>
       {bio}

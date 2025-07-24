@@ -1,0 +1,25 @@
+/* light */
+
+pre code.hljs {
+  display: unset;
+  overflow-x: unset;
+  padding: unset
+}
+
+.hljs {
+  background: unset
+}
+
+@media (prefers-color-scheme: dark) {
+  /* dark */
+
+  pre code.hljs {
+    display: unset;
+    overflow-x: unset;
+    padding: unset
+  }
+
+  .hljs {
+    background: unset
+  }
+}

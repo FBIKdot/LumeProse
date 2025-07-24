@@ -4,6 +4,7 @@ import date from "lume/plugins/date.ts";
 import sitemap from "lume/plugins/sitemap.ts";
 import feed from "lume/plugins/feed.ts";
 import slugifyUrls from "lume/plugins/slugify_urls.ts";
+import codeHighlight from "lume/plugins/code_highlight.ts";
 
 const site = lume({
   location: new URL("https://fbik.top"),
@@ -20,6 +21,17 @@ site.use(feed({
   output: ["./feed.xml"],
 }));
 site.use(slugifyUrls());
+site.use(codeHighlight({
+  theme: [{
+    name: "github-dark-dimmed",
+    cssFile: "/styles.css",
+    placeholder: "/* dark */",
+  }, {
+    name: "github",
+    cssFile: "/styles.css",
+    placeholder: "/* light */",
+  }],
+}));
 
 // use on production
 if (!Deno.args.includes("-s")) {
@@ -32,7 +44,7 @@ site.add("_readme.md", "index.html");
 
 site.add("public/smol.css", "smol.css");
 site.add("public/smol-v2.css", "smol-v2.css");
-site.add("public/syntax.css", "syntax.css");
+site.add("public/styles.css", "styles.css");
 site.add("public/favicon.ico", "favicon.ico");
 site.add("public/prose.ico", "prose.ico");
 
