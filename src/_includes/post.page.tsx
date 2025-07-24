@@ -28,7 +28,7 @@ export default (
         <div class="tags">
           {tags.map((value) => (
             <code class="pill tag">
-              <a href={`/?tag=${value}`}>{`#${value}`}</a>
+              {`#${value}`}
             </code>
           ))}
         </div>
