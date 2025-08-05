@@ -14,7 +14,7 @@ icon: favicon.ico
 - Level of Programming: Beginner
 - Dream: Be a dev
 
-![Skills](https://skillicons.dev/icons?i=js,ts,nodejs,deno,py)
+![](https://skillicons.dev/icons?i=js,ts,nodejs,deno,py)
 
 [Blog](/blog) | [Github](https://github.com/FBIKdot) |
 [BiliBili](https://space.bilibili.com/470453924)
