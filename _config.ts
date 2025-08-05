@@ -13,6 +13,7 @@ const site = lume({
   src: "src",
   server: {
     port: 4173,
+    debugBar: false,
   },
 });
 
