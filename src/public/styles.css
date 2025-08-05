@@ -3,11 +3,11 @@
 pre code.hljs {
   display: unset;
   overflow-x: unset;
-  padding: unset
+  padding: unset;
 }
 
 .hljs {
-  background: unset
+  background: unset;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -16,10 +16,10 @@ pre code.hljs {
   pre code.hljs {
     display: unset;
     overflow-x: unset;
-    padding: unset
+    padding: unset;
   }
 
   .hljs {
-    background: unset
+    background: unset;
   }
 }
