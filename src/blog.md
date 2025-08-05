@@ -1,6 +1,6 @@
 ---
 layout: blog.page.tsx
-title: "FBIK.'s blog"
+title: "LumeProse"
 type: page
 bio: Minimalism
 showPostsList: true
