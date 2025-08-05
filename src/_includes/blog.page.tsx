@@ -18,7 +18,10 @@ export default (
             `#tag-${tag}:target ~ main .post:not([tag~="${tag}"])`
           ).join(",")
         }{ --display: none; }
-      
+      ${
+          tags.map((tag) => `#tag-${tag}:target ~ main .clear-filter`).join(",")
+        }{ display: block}
+        
       `}
       </style>
       {tags.map((tag) => (
@@ -59,6 +62,7 @@ export default (
         )}
         {showPostsList && (
           <section class="posts group mt-2">
+            <a href="#" class="invisibility clear-filter">clear filters</a>
             {posts.map((page) => (
               <article class="post" tag={page.tags.join(" ")}>
                 <div class="flex items-center">
