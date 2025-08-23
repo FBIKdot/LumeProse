@@ -1,7 +1,13 @@
 import Base from "./base.page.tsx";
 
+interface Author {
+  name?: string;
+  link?: string;
+}
+
 export default (
-  { content, title, date, tags, description, footer, update, icon }: Lume.Data,
+  { content, title, date, tags, description, footer, update, icon, author }:
+    Lume.Data,
   helpers: Lume.Helpers,
 ) => (
   <Base title={title || "title"} isPost={true} icon={icon}>
@@ -14,7 +20,14 @@ export default (
           {helpers.date(date)}
         </time>
         <span>{" "}&middot;{" "}</span>
-        <a href="/">FBIK.</a>
+        {(author as Author[]).map((author) => (
+          <a
+            href={author.link || "/"}
+            target={author.link?.includes("http") ? "_blank" : "_self"}
+          >
+            {author.name || "anonymous"}
+          </a>
+        )).flatMap((v) => [v, " "])}
       </p>
       {description && description !== "" && (
         <blockquote>{description}</blockquote>
