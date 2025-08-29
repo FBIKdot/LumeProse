@@ -16,7 +16,8 @@ export default (obj: { children?: never }) => (
         rel="noopener noreferrer"
       >
         LumeProse
-      </a>
+      </a>{" "}
+      | Copyright &copy; 2025 FBIK.
     </footer>
   </>
 );

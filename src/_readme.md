@@ -1,15 +1,20 @@
 ---
 layout: blog.page.tsx
-title: "LumeProse"
+title: "FBIK."
 type: page
 icon: favicon.ico
 ---
 
-# 👋 LumeProse
+# 👋 Hi! I am FBIK.
 
-[Lume🔥](https://lume.land) + [prose.sh~](https://prose.sh) = LumeProse 🔥~
+- a.k.a FBIKdot, FBIK, ~~Bovine Beta~~
+- Come from: Guangdong, China
+- Spoken Language: Chinese & English
+- Interest: programming, playing video games
+- Level of Programming: Beginner
+- Dream: Be a dev
 
-A blog, powered bt Lume, using template and style from prose.sh
+![](https://skillicons.dev/icons?i=js,ts,nodejs,deno,py)
 
-[Github](https://github.com/FBIKdot/LumeProse) |
-[FBIK.'s Blog](https://fbik.top) (example)
+[Blog](/blog) | [Github](https://github.com/FBIKdot) |
+[BiliBili](https://space.bilibili.com/470453924)

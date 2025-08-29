@@ -8,6 +8,7 @@ author:
     link: /
   - name: example
     link: https://example.com
+date: 2025-08-08
 update: 2077-01-01
 footer: |
   test!
