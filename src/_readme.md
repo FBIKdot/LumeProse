@@ -2,7 +2,7 @@
 layout: blog.page.tsx
 title: "FBIK."
 type: page
-icon: favicon.ico
+icon: /favicon.png
 ---
 
 # 👋 Hi! I am FBIK.
