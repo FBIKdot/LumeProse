@@ -1,1 +1,2 @@
-*.css linguist-language=txt
+src/public/smol-v2.css linguist-language=txt
+src/public/smol.css linguist-language=txt

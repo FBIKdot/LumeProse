@@ -7,7 +7,8 @@ interface Author {
 
 export default (
   { content, title, date, tags, description, footer, update, icon, author }:
-    Lume.Data,
+    & Lume.Data
+    & { author: Author[] },
   helpers: Lume.Helpers,
 ) => (
   <Base title={title || "title"} isPost={true} icon={icon}>
@@ -20,14 +21,14 @@ export default (
           {helpers.date(date)}
         </time>
         <span>{" "}&middot;{" "}</span>
-        {(author as Author[]).map((author) => (
+        {author.map((author) => (
           <a
             href={author.link || "/"}
             target={author.link?.includes("http") ? "_blank" : "_self"}
           >
             {author.name || "anonymous"}
           </a>
-        )).flatMap((v) => [v, " "])}
+        )).flatMap((v, i) => i === author.length - 1 ? [v] : [v, " , "])}
       </p>
       {description && description !== "" && (
         <blockquote>{description}</blockquote>

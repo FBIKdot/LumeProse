@@ -15,7 +15,7 @@ export default (
       .post { display: var(--display, block); }
       ${
           tags.map((tag) =>
-            `#tag-${tag}:target ~ main .post:not([tag~="${tag}"])`
+            `#tag-${tag}:target ~ main .post:not([data-tag~="${tag}"])`
           ).join(",")
         }{ --display: none; }
       ${
@@ -64,7 +64,7 @@ export default (
           <section class="posts group mt-2">
             <a href="#" class="invisibility clear-filter">clear filters</a>
             {posts.map((page) => (
-              <article class="post" tag={page.tags.join(" ")}>
+              <article class="post" data-tag={page.tags.join(" ")}>
                 <div class="flex items-center">
                   <time
                     datetime={page.date.toISOString()}
