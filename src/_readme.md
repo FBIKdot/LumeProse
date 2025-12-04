@@ -7,14 +7,15 @@ icon: /favicon.png
 
 # 👋 Hi! I am FBIK.
 
-- a.k.a FBIKdot, FBIK, ~~Bovine Beta~~
-- Come from: Guangdong, China
-- Spoken Language: Chinese & English
-- Interest: programming, playing video games
-- Level of Programming: Beginner
-- Dream: Be a dev
+- Also known as FBIKdot, FBIK, ~~Bovine Beta~~
+- From: Guangdong, China
+- Languages: Chinese (native) & English
+- Hobbies: programming, playing video games
+- Interested in Front-end development
 
-![](https://skillicons.dev/icons?i=js,ts,nodejs,deno,py)
+My most used technologies:
+
+![](https://skillicons.dev/icons?i=js,ts,nodejs,deno)
 
 [Blog](/blog) | [Github](https://github.com/FBIKdot) |
 [BiliBili](https://space.bilibili.com/470453924)
