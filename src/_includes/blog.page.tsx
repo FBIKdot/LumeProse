@@ -5,7 +5,10 @@ export default (
   { content, title, search, showPostsList, bio, icon }: Lume.Data,
   helpers: Lume.Helpers,
 ) => {
-  const posts = search.pages().filter((page) => page.type !== "page");
+  const posts = search
+    .pages()
+    .filter((page) => page.type !== "page")
+    .sort((a, b) => b.date.getTime() - a.date.getTime());
   const tags = [...new Set(posts.map((page) => page.tags).flat())];
   return (
     <Base title={title || "title"} icon={icon}>
