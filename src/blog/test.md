@@ -3,6 +3,7 @@ title: test
 tags:
   - test
 description: test
+date: 2025-08-08
 author:
   - name: FBIK.
     link: /
