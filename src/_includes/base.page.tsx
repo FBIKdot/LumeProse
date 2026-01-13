@@ -26,6 +26,12 @@ export default (
         {children}
         <Footer />
       </body>
+      <script
+        src="https://esm.sh/instant.page"
+        integrity="sha384-8IgzZkM7ErR+/6XIgiV5MSouLg56ItSeABCBOel+oSoHayvCv2kqyQSY+tpSug3A"
+        crossorigin="anonymous"
+      >
+      </script>
     </html>
   </>
 );
