@@ -27,8 +27,8 @@ export default (
         <Footer />
       </body>
       <script
-        src="https://esm.sh/instant.page"
-        integrity="sha384-8IgzZkM7ErR+/6XIgiV5MSouLg56ItSeABCBOel+oSoHayvCv2kqyQSY+tpSug3A"
+        src="https://esm.sh/instant.page@5.2.0/es2015/instant.page.mjs"
+        integrity="sha384-Wv7ml440sSexdrNHrzr/JzJM3IHIgvoVAwwBvqI02y5hyk6NQBq75gkmowKuTFQB"
         crossorigin="anonymous"
       >
       </script>
