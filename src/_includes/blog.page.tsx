@@ -25,7 +25,7 @@ export default (
           tags.map((tag) => `#tag-${tag}:target ~ main .clear-filter`).join(",")
         }{ display: block}
         
-      `}
+      `.replace(/\s/g, "")}
       </style>
       {tags.map((tag) => (
         <a class="invisibility" href={`#tag-${tag}`} id={`tag-${tag}`}></a>
