@@ -29,6 +29,7 @@ export default (
       <script
         src="https://esm.sh/instant.page@5.2.0/es2015/instant.page.mjs"
         integrity="sha384-Wv7ml440sSexdrNHrzr/JzJM3IHIgvoVAwwBvqI02y5hyk6NQBq75gkmowKuTFQB"
+        type="module"
         crossorigin="anonymous"
       >
       </script>
