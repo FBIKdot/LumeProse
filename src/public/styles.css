@@ -23,3 +23,11 @@ pre code.hljs {
     background: unset;
   }
 }
+
+.text-2xl,
+.md h1,
+.md h2,
+.md h3,
+.md h4{
+   text-transform: none !important;
+}
