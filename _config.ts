@@ -27,11 +27,11 @@ site.use(slugifyUrls());
 site.use(codeHighlight({
   theme: [{
     name: "github-dark-dimmed",
-    cssFile: "/styles.css",
+    cssFile: "/hlghlight.css",
     placeholder: "/* dark */",
   }, {
     name: "github",
-    cssFile: "/styles.css",
+    cssFile: "/hlghlight.css",
     placeholder: "/* light */",
   }],
 }));
@@ -55,6 +55,7 @@ site.add("_readme.md", "index.html");
 site.add("public/smol.css", "smol.css");
 site.add("public/smol-v2.css", "smol-v2.css");
 site.add("public/styles.css", "styles.css");
+site.add("public/highlight.css", "highlight.css");
 site.add("public/favicon.png", "favicon.ico");
 site.add("public/prose.ico", "prose.ico");
 

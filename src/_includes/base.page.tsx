@@ -13,8 +13,9 @@ export default (
       <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <link rel="stylesheet" href="/styles.css" />
         <link rel="stylesheet" href={isPost ? "/smol.css" : "/smol-v2.css"} />
-        {isPost && <link rel="stylesheet" href="/styles.css" />}
+        {isPost && <link rel="stylesheet" href="/highlight.css" />}
         <link
           rel="icon"
           href={avatar || "/favicon.ico"}
