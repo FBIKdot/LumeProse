@@ -9,8 +9,8 @@ export default (obj: { children?: never }) => (
         rel="noopener noreferrer"
       >
         LumeProse
-      </a>{" "}
-      | Copyright &copy; 2025 FBIK.
+      </a>
+      <br />Copyright &copy; 2025 FBIK.
     </footer>
   </>
 );
