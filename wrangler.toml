@@ -1,0 +1,8 @@
+"$schema" = "https://esm.sh/wrangler@4.66.0/config-schema.json"
+name = "fbik-blog"
+compatibility_date = "2026-07-15"
+workers_dev = false
+
+[assets]
+directory = "./_site"
+not_found_handling = "404-page"
