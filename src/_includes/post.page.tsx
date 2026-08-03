@@ -37,7 +37,8 @@ export default (
     </header>
     <main>
       <article class="md">
-        {{ __html: content }}
+        <nav toc="content" style="display:none"></nav>
+        <div id="content">{{ __html: content }}</div>
 
         <div class="tags">
           {[...new Set(tags)].map((tag) => (

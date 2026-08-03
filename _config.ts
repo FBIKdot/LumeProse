@@ -5,6 +5,7 @@ import sitemap from "lume/plugins/sitemap.ts";
 import feed from "lume/plugins/feed.ts";
 import slugifyUrls from "lume/plugins/slugify_urls.ts";
 import codeHighlight from "lume/plugins/code_highlight.ts";
+import toc, { linkInsideHeader } from "lume/plugins/toc.ts";
 
 import mila from "markdown-it-link-attributes";
 
@@ -34,6 +35,11 @@ site.use(codeHighlight({
     cssFile: "/styles.css",
     placeholder: "/* light */",
   }],
+}));
+site.use(toc({
+  anchor: linkInsideHeader({
+    content: "#",
+  }),
 }));
 
 site.hooks.addMarkdownItPlugin(mila, {
