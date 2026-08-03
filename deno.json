@@ -1,5 +1,6 @@
 {
   "imports": {
+    "@std/text": "jsr:@std/text@^1.0.19",
     "lume/": "https://cdn.jsdelivr.net/gh/lumeland/lume@3.3.0/",
     "lume/jsx-runtime": "https://cdn.jsdelivr.net/gh/oscarotero/ssx@0.1.15/jsx-runtime.ts",
     "markdown-it-link-attributes": "npm:markdown-it-link-attributes@^4.0.1"
