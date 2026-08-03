@@ -6,6 +6,7 @@ import feed from "lume/plugins/feed.ts";
 import slugifyUrls from "lume/plugins/slugify_urls.ts";
 import codeHighlight from "lume/plugins/code_highlight.ts";
 import toc, { linkInsideHeader } from "lume/plugins/toc.ts";
+import { toKebabCase } from "@std/text";
 
 import mila from "markdown-it-link-attributes";
 
@@ -40,6 +41,7 @@ site.use(toc({
   anchor: linkInsideHeader({
     content: "#",
   }),
+  slugify: (str) => toKebabCase(str),
 }));
 
 site.hooks.addMarkdownItPlugin(mila, {
