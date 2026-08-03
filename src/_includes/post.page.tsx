@@ -37,10 +37,11 @@ export default (
     </header>
     <main>
       <article class="md">
-        {{ __html: content }}
+        <nav toc="content" style="display:none"></nav>
+        <div id="content">{{ __html: content }}</div>
 
         <div class="tags">
-          {tags.map((tag) => (
+          {[...new Set(tags)].map((tag) => (
             <code class="pill tag">
               <a href={`/blog/#tag-${tag}`}>{`#${tag}`}</a>
             </code>

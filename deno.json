@@ -1,7 +1,7 @@
 {
   "imports": {
-    "lume/": "https://deno.land/x/lume@v3.0.5/",
-    "lume/jsx-runtime": "https://deno.land/x/ssx@v0.1.11/jsx-runtime.ts",
+    "lume/": "https://cdn.jsdelivr.net/gh/lumeland/lume@3.3.0/",
+    "lume/jsx-runtime": "https://cdn.jsdelivr.net/gh/oscarotero/ssx@0.1.15/jsx-runtime.ts",
     "markdown-it-link-attributes": "npm:markdown-it-link-attributes@^4.0.1"
   },
   "tasks": {

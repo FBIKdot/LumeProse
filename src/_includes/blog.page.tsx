@@ -67,7 +67,10 @@ export default (
           <section class="posts group mt-2">
             <a href="#" class="invisibility clear-filter">clear filters</a>
             {posts.map((page) => (
-              <article class="post" data-tag={page.tags.join(" ")}>
+              <article
+                class="post"
+                data-tag={[...new Set(page.tags)].join(" ")}
+              >
                 <div class="flex items-center">
                   <time
                     datetime={page.date.toISOString()}
