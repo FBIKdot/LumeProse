@@ -48,6 +48,7 @@
     "jsr:@std/path@^1.1.1": "1.1.1",
     "jsr:@std/path@^1.1.5": "1.1.6",
     "jsr:@std/path@^1.1.6": "1.1.6",
+    "jsr:@std/regexp@^1.0.2": "1.0.2",
     "jsr:@std/semver@1.0.8": "1.0.8",
     "jsr:@std/streams@^1.0.10": "1.0.10",
     "jsr:@std/streams@^1.1.1": "1.1.2",
@@ -249,6 +250,9 @@
         "jsr:@std/internal@^1.0.14"
       ]
     },
+    "@std/regexp@1.0.2": {
+      "integrity": "7493d47c077cfdb023e41a0b44fd608d87fe5b36fc3dc614261afc0f1452aabf"
+    },
     "@std/semver@1.0.8": {
       "integrity": "dc830e8b8b6a380c895d53fbfd1258dc253704ca57bbe1629ac65fd7830179b7"
     },
@@ -259,7 +263,10 @@
       "integrity": "0249bf9b78a999f57032ca4d8e7ccaa57579090242640b35ddc948fbb745d3af"
     },
     "@std/text@1.0.19": {
-      "integrity": "003a0e032d360e8c3a4e0410fb792c77a66bd6553fee9d60c6ec1bce30d29223"
+      "integrity": "003a0e032d360e8c3a4e0410fb792c77a66bd6553fee9d60c6ec1bce30d29223",
+      "dependencies": [
+        "jsr:@std/regexp"
+      ]
     },
     "@std/toml@1.0.8": {
       "integrity": "eb8ae76b4cc1c6c13f2a91123675823adbec2380de75cd3748c628960d952164",
@@ -1151,6 +1158,8 @@
     "https://cdn.jsdelivr.net/gh/lumeland/lume@3.3.0/plugins/vento.ts": "5970a4bda08a1706bdd81fe8f82b0a424df783f4e25983b67de112dcca024834",
     "https://cdn.jsdelivr.net/gh/lumeland/lume@3.3.0/plugins/yaml.ts": "1f57185f048716552c9786d1d160bc1537ec9e09b35efd64b9be92dbacb9f680",
     "https://cdn.jsdelivr.net/gh/lumeland/lume@3.3.0/types.ts": "79e135b4a9e2d7aa69d6049ed1b5d3438e02b6ca06c7a9092910636aba341821",
+    "https://cdn.jsdelivr.net/gh/oscarotero/ssx@0.1.15/css.ts": "ee020dcd73edabb81ed021f8393128dfb64784aa4b59734f778d65a78505a600",
+    "https://cdn.jsdelivr.net/gh/oscarotero/ssx@0.1.15/html.ts": "c0b93e7486db5fd32e2454bf546afcf5aa6e8c2b58df357ca2d501c12f7740b1",
     "https://cdn.jsdelivr.net/gh/oscarotero/ssx@0.1.15/jsx-runtime.ts": "3b2187129f4db867169137e55fdd1b1a8915208f01970536cfbe1a66c60d74f2",
     "https://cdn.jsdelivr.net/gh/ventojs/vento@2.4.0/core/environment.ts": "1da293f6a837590ce95a829638b0ffdefd6b18ac5de54b6a55a284febf6d382f",
     "https://cdn.jsdelivr.net/gh/ventojs/vento@2.4.0/core/errors.ts": "8606b682b465d598a394feea135dd2f84033b5ef2a61a23d116ccb782a0a547a",
@@ -2014,6 +2023,7 @@
   },
   "workspace": {
     "dependencies": [
+      "jsr:@std/text@^1.0.19",
       "npm:markdown-it-link-attributes@^4.0.1"
     ]
   }
