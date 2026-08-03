@@ -40,7 +40,7 @@ export default (
         {{ __html: content }}
 
         <div class="tags">
-          {tags.map((tag) => (
+          {[...new Set(tags)].map((tag) => (
             <code class="pill tag">
               <a href={`/blog/#tag-${tag}`}>{`#${tag}`}</a>
             </code>
