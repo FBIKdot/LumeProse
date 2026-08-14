@@ -15,7 +15,7 @@ icon: /favicon.png
 
 My most used technologies:
 
-![](https://skillicons.dev/icons?i=js,ts,nodejs,deno)
+![js,ts,nodejs,deno,c,cs](https://skillicons.dev/icons?i=js,ts,nodejs,deno,c,cs)
 
 [Blog](/blog) | [Github](https://github.com/FBIKdot) |
 [BiliBili](https://space.bilibili.com/470453924)
